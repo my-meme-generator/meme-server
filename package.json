@@ -1,0 +1,25 @@
+{
+  "name": "meme-server",
+  "version": "1.0.0",
+  "description": "server for meme-client",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zedzorander/meme-server.git"
+  },
+  "author": "Cole Phares",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zedzorander/meme-server/issues"
+  },
+  "homepage": "https://github.com/zedzorander/meme-server#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.4"
+  }
+}
