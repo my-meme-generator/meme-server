@@ -17,9 +17,7 @@ var corsOptions = {
   origin: 'http://localhost:4200',
   optionsSuccessStatus: 200
 }
-server.listen(8000, () => {
-  console.log('Server started!');
-});
+
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: true }));
 server.use(cors(corsOptions));
@@ -50,3 +48,7 @@ server.route('/api/votes/:id').put((req, res) => {
     res.status(200).send(updatedMeme);
   });*/
 })
+
+server.listen(8000, () => {
+  console.log('Server started!');
+});
