@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const ObjectId = require('mongodb');
 var Meme = require('./models/Meme.js');
 
 // Database setup
@@ -33,8 +32,13 @@ server.route('/api/memes').get((req, res) => {
 
 // Add a new meme
 server.route('/api/meme').post((req, res) => {
+  console.log('Inside create meme: ');
+  console.log(req.body);
   Meme.create(req.body, (err, newMeme) => {
     if(err) throw err;
+
+    console.log("newMeme: ");
+    console.log(newMeme);
 
     res.status(200).send(newMeme);
   })
@@ -48,11 +52,7 @@ server.route('/api/votes/:id').put((req, res) => {
     if(!toUpdate) {
       return next(newError('Could not load Document'))
     } else {
-      if(meme.upvotes === toUpdate.upvotes) {
-        toUpdate.downvotes = meme.downvotes;
-      } else {
-        toUpdate.upvotes = meme.upvotes;
-      }
+      toUpdate.upvotes === meme.upvotes ? toUpdate.downvotes = meme.downvotes : toUpdate.upvotes = meme.upvotes;
       
       toUpdate.save().then(meme => {
         res.status(200).json('Update successful');
