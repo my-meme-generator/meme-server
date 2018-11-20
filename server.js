@@ -31,14 +31,9 @@ server.route('/api/memes').get((req, res) => {
 });
 
 // Add a new meme
-server.route('/api/meme').post((req, res) => {
-  console.log('Inside create meme: ');
-  console.log(req.body);
+server.route('/api/memes').post((req, res) => {
   Meme.create(req.body, (err, newMeme) => {
     if(err) throw err;
-
-    console.log("newMeme: ");
-    console.log(newMeme);
 
     res.status(200).send(newMeme);
   })
