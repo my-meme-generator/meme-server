@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 // Meme model
 var Meme = new mongoose.Schema({
-  imagePath: { type: String },
+  imageLink: { type: String },
   author: { type: String },
   upvotes: { type: Number, min: 0 },
   downvotes: { type: Number, min: 0 },
