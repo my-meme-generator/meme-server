@@ -12,6 +12,7 @@ What you need to run meme-server on Windows 10.
 
 - Install [MongoDb](https://www.mongodb.com/download-center/community) and [Node.js](https://nodejs.org/en/). 
   - You can find a good MongoDb installation tutorial [here](https://www.youtube.com/watch?v=FwMwO8pXfq0&t=662s).
+  - You may need to change the mongoose connect url on line 8 in server.js  depending on the port and name of database.
 
 ### Running Application
 
