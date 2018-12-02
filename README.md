@@ -10,7 +10,7 @@ These instructions will you get a copy of the project up and running on your loc
 
 What you need to run meme-server on Windows 10.
 
-- Install [MongoDb] (https://www.mongodb.com/download-center/community) and [Node.js](https://nodejs.org/en/). 
+- Install [MongoDb](https://www.mongodb.com/download-center/community) and [Node.js](https://nodejs.org/en/). 
   - You can find a good MongoDb installation tutorial [here](https://www.youtube.com/watch?v=FwMwO8pXfq0&t=662s).
 
 ### Running Application
@@ -24,7 +24,7 @@ What you need to run meme-server on Windows 10.
 ### Built With
 
 - [Visual Studio Code](https://code.visualstudio.com) - Code editor
-- [MongoDb] (https://www.mongodb.com/download-center/community) - Database
+- [MongoDb](https://www.mongodb.com/download-center/community) - Database
 - [Node.js](https://nodejs.org/en/) - Run-time environment
 
 ### License
