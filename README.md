@@ -26,7 +26,7 @@ What you need to run meme-server on Windows 10.
 
 - [Visual Studio Code](https://code.visualstudio.com) - Code editor
 - [MongoDb](https://www.mongodb.com/download-center/community) - Database
-- Express - Web framework
+- [Express](https://expressjs.com/) - Web framework
 - [Node.js](https://nodejs.org/en/) - Run-time environment
 
 ## License
