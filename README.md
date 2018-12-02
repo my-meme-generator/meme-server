@@ -19,14 +19,21 @@ What you need to run meme-server on Windows 10.
 - In Windows, open Command Terminal and run the command `mongod` (traverse to MongoDb's bin directory first if path not added to environment variables).
 - In Windows, open second Command Terminal, wait for `waiting for connections on port ...` message on first terminal, then run the command `mongo`.
 - In Visual Studio Code, run the command `npm i` to install node_modules.
+- Run the command `npm i express --save`.
 - In Visual Studio Code, run the command `node server.js` to start the server.
 
-### Built With
+## Built With
 
 - [Visual Studio Code](https://code.visualstudio.com) - Code editor
 - [MongoDb](https://www.mongodb.com/download-center/community) - Database
+- Express - Web framework
 - [Node.js](https://nodejs.org/en/) - Run-time environment
 
-### License
+## License
 
 This program is licensed under the "MIT License". Please see the file LICENSE in the source distribution of this software for license terms.
+
+## Author
+
+- Cole Phares - [zedzorander](https://github.com/zedzorander)
+  
